@@ -7,6 +7,7 @@ exports.seed = function (knex) {
         },
         {
             Name: "Seed back yard",
+            Description: "Need nice grass",
             Completed: "False",
         }
     ])

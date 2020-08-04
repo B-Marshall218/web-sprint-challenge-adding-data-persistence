@@ -107,3 +107,21 @@ Follow these steps for completing your project.
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
+
+
+
+exports.seed = function (knex, Promise) {
+//   return knex("resources").insert([
+//     {
+//       resource_id: 1,
+//       Name: "Wood",
+//       Description: "Get wood from Home Deopt",
+//     },
+//     {
+//       resource_id: 2,
+//       Name: "Hammer",
+//       Description: "",
+
+//     }
+//   ])
+// }

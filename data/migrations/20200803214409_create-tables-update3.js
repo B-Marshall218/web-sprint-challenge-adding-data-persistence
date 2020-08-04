@@ -1,4 +1,3 @@
-
 exports.up = function (knex) {
     return knex.schema
         .createTable("projects", tbl => {
@@ -9,7 +8,7 @@ exports.up = function (knex) {
 
         })
         .createTable("resources", tbl => {
-            tbl.increments("");
+            tbl.increments();
             tbl.string("Name", 128).notNullable().unique();
             tbl.string("Description", 255);
         })
@@ -21,7 +20,8 @@ exports.up = function (knex) {
             tbl.integer("project_id")
                 .unsigned()
                 .notNullable()
-                .references("projects.id")
+                .references("id")
+                .inTable("projects")
                 .onDelete("CASCADE")
                 .onUpdate("CASCADE");
 
@@ -30,13 +30,15 @@ exports.up = function (knex) {
             tbl.integer("project_id")
                 .unsigned()
                 .notNullable()
-                .references("projects.id")
+                .references("id")
+                .inTable("projects")
                 .onDelete("CASCADE")
                 .onUpdate("CASCADE");
             tbl.integer("resource_id")
                 .unsigned()
                 .notNullable()
-                .references("resources.id")
+                .references("id")
+                .inTable("resources")
                 .onDelete("CASCADE")
                 .onUpdate("CASCADE");
         })
