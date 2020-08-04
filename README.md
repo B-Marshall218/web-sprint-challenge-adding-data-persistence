@@ -110,18 +110,3 @@ Follow these steps for completing your project.
 
 
 
-exports.seed = function (knex, Promise) {
-//   return knex("resources").insert([
-//     {
-//       resource_id: 1,
-//       Name: "Wood",
-//       Description: "Get wood from Home Deopt",
-//     },
-//     {
-//       resource_id: 2,
-//       Name: "Hammer",
-//       Description: "",
-
-//     }
-//   ])
-// }
